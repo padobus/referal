@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Выбор сервера</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #222;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .server-panel {
+            background-color: #333;
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+            width: 350px;
+            border: 1px solid #444;
+        }
+        h1 {
+            text-align: center;
+            color: #4CAF50;
+            margin-bottom: 25px;
+            font-size: 24px;
+        }
+        .server-info {
+            background-color: #444;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .server-name {
+            font-weight: bold;
+            color: #4CAF50;
+        }
+        .server-status {
+            color: #ff5555;
+            font-weight: bold;
+        }
+        .credentials {
+            background-color: #2c2c2c;
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 3px solid #4CAF50;
+        }
+        .credential-item {
+            margin-bottom: 10px;
+        }
+        .credential-label {
+            color: #aaa;
+            font-size: 14px;
+        }
+        .credential-value {
+            font-family: 'Courier New', monospace;
+            background-color: #111;
+            padding: 8px;
+            border-radius: 3px;
+            display: inline-block;
+            margin-top: 3px;
+            color: #4CAF50;
+        }
+    </style>
+</head>
+<body>
+    <div class="server-panel">
+        <h1>Подключение к серверу</h1>
+        
+        <div class="server-info">
+            <span class="server-name">Server 1 (Europa)</span> — 
+            <span class="server-status">OFFLINE</span>
+        </div>
+        
+        <div class="credentials">
+            <div class="credential-item">
+                <div class="credential-label">Имя:</div>
+                <div class="credential-value">chrenobus</div>
+            </div>
+            <div class="credential-item">
+                <div class="credential-label">Пароль:</div>
+                <div class="credential-value">6325</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
